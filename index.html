@@ -3,23 +3,29 @@
 <body>
 <p id="hello"></p>
 <script>
-    function isPrime(number) {
-        for (var i = 2; i < number; i++) {
-            if (number % i == 0) {
-                return false;
+    if (confirm("lol da?")){ //podtverjdenie
+        function isPrime(number) {
+            for (var i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    return false;
+                }
             }
+            return true;
         }
-        return true;
-    }
-    alert(isPrime(11));
-    function factorial(number) {
-        var summ = 1;
-        for (var i = 1; i <= number; i++) {
-            summ *= i;
+
+        var n = prompt("enter n"); //chitivanie
+        alert(isPrime(n)); //vivod
+
+        function factorial(number) {
+            var summ = 1;
+            for (var i = 1; i <= number; i++) {
+                summ *= i;
+            }
+            return summ;
         }
-        return summ;
+
+        alert(factorial(n));
     }
-    alert(factorial(11));
 </script>
 </body>
 </html>
