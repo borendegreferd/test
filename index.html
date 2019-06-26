@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html>
 <body>
-<h1>looove</h1>
-<h1>hekllojвop</h1>
+<p id="hello"></p>
+<script>
+    function isPrime(number) {
+        for (var i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    alert(isPrime(708));
+</script>
 </body>
 </html>
