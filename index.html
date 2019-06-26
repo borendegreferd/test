@@ -5,13 +5,21 @@
 <script>
     function isPrime(number) {
         for (var i = 2; i < number; i++) {
-            if (number % i === 0) {
+            if (number % i == 0) {
                 return false;
             }
         }
         return true;
     }
-    alert(isPrime(708));
+    alert(isPrime(11));
+    function factorial(number) {
+        var summ = 1;
+        for (var i = 1; i <= number; i++) {
+            summ *= i;
+        }
+        return summ;
+    }
+    alert(factorial(11));
 </script>
 </body>
 </html>
